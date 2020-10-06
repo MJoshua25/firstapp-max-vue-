@@ -11,7 +11,7 @@ export default {
   name: "Home",
   data: function (){
   	return {
-  		status: 'Critical'
+		  status: 'Critical'
 	  };
   },
 	methods: {
