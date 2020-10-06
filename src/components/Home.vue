@@ -1,23 +1,16 @@
 <template>
-	<div>
-		<p>Server Status: {{ status }}</p>
-		<hr>
-		<button @click="changeStatus">Change Status</button>
+	<div class="Home">
+		<app-server-status></app-server-status>
 	</div>
 </template>
 
 <script>
+import ServerStatus from "@/components/ServerStatus";
+
 export default {
 	name: "Home",
-	data: function () {
-		return {
-			status: 'Critical'
-		};
-	},
-	methods: {
-		changeStatus() {
-			this.status = 'Normal';
-		}
+	components: {
+		'app-server-status': ServerStatus
 	}
 }
 </script>
