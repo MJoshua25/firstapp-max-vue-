@@ -8,14 +8,14 @@
 
 <script>
 export default {
-  name: "Home",
-  data: function (){
-  	return {
-		  status: 'Critical'
-	  };
-  },
+	name: "Home",
+	data: function () {
+		return {
+			status: 'Critical'
+		};
+	},
 	methods: {
-		changeStatus(){
+		changeStatus() {
 			this.status = 'Normal';
 		}
 	}
