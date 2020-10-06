@@ -11,7 +11,9 @@ export default {
 	  };
   },
 	methods: {
-
+		changeStatus(){
+			this.status = 'Normal';
+		}
 	}
 }
 </script>
