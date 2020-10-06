@@ -1,12 +1,23 @@
 <template>
     <div class="ServerStatus">
-        <pre v-text="$attrs"/>
+	    <p>Server Status: {{ status }}</p>
+	    <hr>
+	    <button @click="changeStatus">Change Status</button>
     </div>
 </template>
 
 <script>
     export default {
-        props: {
-        },
+    	name:'ServerStatus',
+	    data: function () {
+		    return {
+			    status: 'Critical'
+		    };
+	    },
+	    methods: {
+		    changeStatus() {
+			    this.status = 'Normal';
+		    }
+	    }
     };
 </script>
